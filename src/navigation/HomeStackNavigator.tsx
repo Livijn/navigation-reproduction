@@ -3,12 +3,11 @@ import {
   NativeStackScreenProps,
 } from '@react-navigation/native-stack';
 import * as React from 'react';
-import UserButtons from '@/navigation/UserButtons';
 import { RootStackParamList } from '@/navigation/RootStackNavigator';
-import getSharedNavigation, {
-  SharedParamList,
-} from '@/navigation/SharedNavigation';
+import { SharedParamList } from '@/navigation/SharedNavigation';
 import EmptyScreen from '@/screens/EmptyScreen';
+import UserProfileScreen from '@/screens/UserProfileScreen';
+import UserButtons from '@/navigation/UserButtons';
 
 export type HomeStackParamList = SharedParamList & {
   HomeFeed: undefined;
@@ -30,7 +29,14 @@ export default function HomeStackNavigator() {
         }}
       />
 
-      {getSharedNavigation(HomeStack as any)}
+      <HomeStack.Screen
+        key="UserProfile"
+        name="UserProfile"
+        component={UserProfileScreen}
+        options={{
+          title: 'UserProfile (Home)',
+        }}
+      />
     </HomeStack.Navigator>
   );
 }

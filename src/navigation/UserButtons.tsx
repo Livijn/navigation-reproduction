@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { tw } from '@/library/tailwind';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -14,7 +14,7 @@ export default function UserButtons() {
           navigation.navigate('UserProfile', { username: 'some profile' });
         }}
       >
-        <Text>Profile</Text>
+        <Text>Go</Text>
       </TouchableOpacity>
     </View>
   );
