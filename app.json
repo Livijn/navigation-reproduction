@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "entryPoint": "./index.ts",
+    "name": "Dogs",
+    "slug": "dogs-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "dogs",
+    "userInterfaceStyle": "automatic",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.getdogsapp",
+      "buildNumber": "0.0.2",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    }
+  }
+}

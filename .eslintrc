@@ -1,0 +1,16 @@
+{
+  "extends": "@react-native-community",
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "no-alert": "off",
+    "no-shadow": ["off"],
+    "@typescript-eslint/no-unused-vars": "off",
+    "react-native/no-inline-styles": "off",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "globals": {
+    "React": true,
+    "JSX": true,
+    "google": true
+  }
+}
